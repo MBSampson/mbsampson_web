@@ -1,3 +1,34 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*** HOME PAGE ***/
+
+$content-margins: 50px 0 0 50px;
+
+
+.home-container{
+  position: relative;
+
+  .main-header-container{
+    margin: $content-margins;
+
+    min-width: 200px;
+    max-width: 33%;
+
+    hr{
+      background-color: white;
+    }
+  }
+}
+
+/*** ABOUT ***/
+
+.about-container{
+
+  .about-content{
+    margin: $content-margins;
+  }
+}
+
+/*** PROJECTS ***/

@@ -6,8 +6,10 @@ class ProjectsController < ApplicationController
   end
 
   def home
-    
   end
+
+  def about
+  end 
 
   def show
   end

@@ -15,3 +15,58 @@
  */
 
 @import "bootstrap";
+
+*, body {
+	box-sizing: border-box;
+
+	margin: 0;
+	padding: 0;
+
+  color: white;
+  font-family: 'Play', sans-serif;
+}
+
+body{
+  // background: #27a6bc linear-gradient(145deg, #017f96 0, #57d8eb 100%) no-repeat fixed;
+  // background: #f8b147 linear-gradient(145deg, #f8b147 0, #ffffff 100%) no-repeat fixed;
+	background-image: url(/assets/flipped_trees.jpg);
+	background-position: top;
+
+  min-width: 250px;
+  height: 100%;
+  min-height: 100%;
+}
+
+/*** NAVBAR ***/
+
+.navbar-brand {
+  width: 150px;
+  transform: translateY(-2px);
+}
+
+.bg-custom-dark{
+  background: #1b1b1b !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  font-family: 'Play', sans-serif;
+  color: white;
+  font-size: 0.9em;
+  width: 100px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.nav-banner-top{
+	width: 100%;
+	height: 7.5px;
+	background-image: url(/assets/sub_nav_bg.png);
+}
+
+.nav-banner-bottom{
+	width: 100%;
+	height: 7.5px;
+	background-image: url(/assets/flip_sub_nav_bg.png);
+
+	box-shadow: 0px 2px 2px black;
+}
