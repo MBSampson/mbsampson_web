@@ -82,7 +82,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: utf8
   database: mbsampson_web_production
-  username: mbsampson_web
-  password: <%= ENV['MBSAMPSON_WEB_DATABASE_PASSWORD'] %>
+  pool: 5
+  username:
+  password:
