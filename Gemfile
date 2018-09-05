@@ -43,10 +43,16 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap', '~> 4.0'
 
 # Use jQuery as Bootstrap dependency
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 
 # Use Font Awesome for stylish icons
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+
+# Use clipboard for easy to use email sharing
+gem 'clipboard-rails', '~> 1.7', '>= 1.7.1'
+
+# Use tippy for tooltips on buttons
+gem 'tippy_rails', '~> 2.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

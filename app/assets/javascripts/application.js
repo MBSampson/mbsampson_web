@@ -10,7 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require clipboard
 //= require jquery3
+//= require tippy
 //= require popper
 //= require bootstrap-sprockets
 //= require rails-ujs
@@ -19,3 +21,12 @@
 //= require_tree .
 
 console.log("Application.js loaded");
+
+$(document).ready(function() {
+  setupFooterClipboard();
+});
+
+function setupFooterClipboard() {
+  let clipboard = new Clipboard('.clipboard-elem');
+  tippy('#footer-clipboard-btn');
+}
