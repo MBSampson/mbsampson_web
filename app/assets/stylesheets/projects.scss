@@ -5,38 +5,33 @@
 /*** HOME PAGE ***/
 
 .home-container{
-  position: relative;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  font-weight: bold;
 
-  .main-header-container{
-    margin: auto;
-    width: 60%;
-    height: 100%;
+
+  a.typewrite{
+    cursor: default;
+    text-decoration: none;
     text-align: center;
-    font-weight: bold;
+  }
 
+  #home-typewriter{
+    font-size: 3.0em;
+  }
 
-    a.typewrite{
-      cursor: default;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    #home-title-text{
-      font-size: 3.0em;
-    }
-
-    hr{
-      background-color: white;
-      box-shadow: 0px 2px 0.5px black;
-      width: 60%;
-      margin: 0 auto 2%;
-    }
+  hr{
+    background-color: white;
+    box-shadow: 0px 2px 0.5px black;
+    width: 60%;
+    margin: 0 auto 10px;
   }
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
   align-items: center;
@@ -47,13 +42,17 @@
 .about-container{
 
   .about-content{
-    margin: 50px 0 0 50px;
-    height: 100%;
+    margin: auto;
+    width: 60%;
   }
 }
 
 /*** PROJECTS ***/
 
+
+
+
+/*** MOBILE ***/
 @media only screen and (max-width: 1036px) {
   a.typewrite{
     font-size: 20px;
@@ -63,8 +62,6 @@
   }
 
   .home-container{
-    .main-header-container{
-      width: 90%;
-    }
+    width: 90%;
   }
 }
