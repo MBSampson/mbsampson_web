@@ -54,6 +54,9 @@ gem 'clipboard-rails', '~> 1.7', '>= 1.7.1'
 # Use tippy for tooltips on buttons
 gem 'tippy_rails', '~> 2.5'
 
+# Use sprockets v3.7.2 to combat security issue
+gem 'sprockets', '~> 3.7.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
