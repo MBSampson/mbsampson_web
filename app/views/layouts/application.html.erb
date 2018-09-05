@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Play|Noticia+Text" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag 'application', 'hover-min', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://unpkg.com/tippy.js/dist/tippy.all.min.js"></script>
   </head>
 
@@ -19,6 +18,7 @@
     <div class="container-fluid vertical-center">
       <%= yield %>
     </div>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-suppress-warning': true %>
   </body>
   <%= render 'shared/footer' %>
 </html>

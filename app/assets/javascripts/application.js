@@ -28,5 +28,11 @@ $(document).ready(function() {
 
 function setupFooterClipboard() {
   let clipboard = new Clipboard('.clipboard-elem');
-  tippy('#footer-clipboard-btn');
+  tippy('#footer-clipboard-btn', {
+    arrow: true,
+    arrowType: 'skinny',
+    size: 'large',
+    animation: 'scale',
+    trigger: 'click'
+  });
 }
