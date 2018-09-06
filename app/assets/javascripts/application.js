@@ -23,16 +23,30 @@
 console.log("Application.js loaded");
 
 $(document).ready(function() {
-  setupFooterClipboard();
+  setFooterClipboard();
 });
 
-function setupFooterClipboard() {
+function setFooterClipboard() {
   let clipboard = new Clipboard('.clipboard-elem');
   tippy('#footer-clipboard-btn', {
     arrow: true,
     arrowType: 'skinny',
+    placement: 'left',
     size: 'large',
     animation: 'scale',
     trigger: 'click'
   });
+}
+
+function setNavButtonListeners() {
+  const homeBtn = $('#home-btn');
+  const aboutBtn = $('#about-btn');
+  const projectsBtn = $('#projects-btn');
+  let homeContainer = $('#home-container');
+  let aboutContainer = $('#about-container');
+  let projectsContainer = $('#projects-container');
+
+
+  // Show or hide containers depending on clicked button
+
 }

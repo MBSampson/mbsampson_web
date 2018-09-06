@@ -4,26 +4,26 @@
 
 /*** HOME PAGE ***/
 
-.home-container{
+#home-container {
   margin: auto;
   width: 70%;
   text-align: center;
   font-weight: bold;
 
 
-  a.typewrite{
+  a.typewrite {
     cursor: default;
     text-decoration: none;
     text-align: center;
   }
 
-  #home-typewriter{
+  #home-typewriter {
     font-size: 3.0em;
   }
 
-  hr{
+  hr {
     background-color: white;
-    box-shadow: 0px 2px 0.5px black;
+    box-shadow: 0 2px 0.5px black;
     width: 60%;
     margin: 0 auto 10px;
   }
@@ -39,29 +39,28 @@
 
 /*** ABOUT ***/
 
-.about-container{
+#about-container {
 
-  .about-content{
-    margin: auto;
-    width: 60%;
-  }
 }
 
 /*** PROJECTS ***/
+#projects-container {
+
+}
 
 
 
 
 /*** MOBILE ***/
 @media only screen and (max-width: 1036px) {
-  a.typewrite{
+  a.typewrite {
     font-size: 20px;
   }
-  #home-subtitle-text{
+  #home-subtitle-text {
     font-size: 12.5px;
   }
 
-  .home-container{
+  .home-container {
     width: 90%;
   }
 }

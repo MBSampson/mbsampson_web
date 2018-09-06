@@ -1,18 +1,10 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
-  def index
+  def home
     @projects = Project.all
   end
 
-  def home
-  end
-
-  def about
-  end 
-
-  def show
-  end
 
   def new
     @project = Project.new
