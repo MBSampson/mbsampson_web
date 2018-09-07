@@ -54,6 +54,9 @@ gem 'clipboard-rails', '~> 1.7', '>= 1.7.1'
 # Use tippy for tooltips on buttons
 gem 'tippy_rails', '~> 2.5'
 
+# Use React for AWESOME components
+gem 'react-rails', '~> 1.7', '>= 1.7.1'
+
 # Use sprockets v3.7.2 to combat security issue
 gem 'sprockets', '~> 3.7.2'
 
