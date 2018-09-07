@@ -57,8 +57,9 @@ gem 'tippy_rails', '~> 2.5'
 # Use React for AWESOME components
 gem 'react-rails', '~> 1.7', '>= 1.7.1'
 
-# Use sprockets v3.7.2 to combat security issue
-gem 'sprockets', '~> 3.7.2'
+gem 'sprockets', '~> 4.0.0.beta4'
+
+gem 'babel-rails', '~> 0.3.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
