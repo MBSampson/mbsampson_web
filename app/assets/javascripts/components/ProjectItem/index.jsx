@@ -1,5 +1,4 @@
-// import React, { Component } from 'react';
-
+/* import React, { Component } from 'react';
 
 var ProjectItem = React.createClass({
   render: function() {
@@ -8,3 +7,11 @@ var ProjectItem = React.createClass({
     )
   }
 });
+*/
+
+import React from 'react';
+
+const element = <h1>Hello!</h1>;
+
+console.log(element);
+
