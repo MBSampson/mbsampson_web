@@ -15,6 +15,7 @@
     cursor: default;
     text-decoration: none;
     text-align: center;
+    color: white;
   }
 
   #home-typewriter {
@@ -40,7 +41,25 @@
 /*** EXPERIENCE ***/
 
 #experience-container {
-  border: 1px solid red;
+  background: white;
+  color: black !important;
+
+  .experience-title {
+    float: left;
+    font-family: 'Noticia Text', sans-serif;
+    font-size: 18px;
+  }
+
+  .experience-sidetitle {
+    float: right;
+    display: inline-block;
+    color: #b66309;
+    font-size: 14px;
+  }
+
+  .experience-content {
+    width: 100%;
+  }
 }
 
 /*** PROJECTS ***/

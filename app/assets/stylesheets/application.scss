@@ -23,7 +23,6 @@
 	margin: 0;
 	padding: 0;
 
-  color: white;
   font-family: 'Play', sans-serif;
 }
 
@@ -37,6 +36,7 @@ body{
   min-height: 100%;
 
 	position: relative;
+  color: white;
 }
 
 button {
@@ -47,8 +47,20 @@ button {
   padding: 5px 12px;
 }
 
+.clear {
+  clear: both;
+}
+
 .hidden {
   visibility: hidden !important;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.fa {
+  color: white;
 }
 
 .wave-banner-top{
