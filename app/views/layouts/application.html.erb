@@ -15,7 +15,7 @@
   <body>
     <%= render 'shared/main_nav' %>
 
-    <div class="container-fluid vertical-center">
+    <div id="main-content-wrapper" class="container-fluid vertical-center">
       <%= yield %>
     </div>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-suppress-warning': true %>

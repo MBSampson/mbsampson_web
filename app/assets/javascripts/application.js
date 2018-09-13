@@ -24,7 +24,6 @@ console.log("Application.js loaded");
 
 $(document).ready(function() {
   setFooterClipboard();
-  setNavButtonListeners();
 });
 
 function setFooterClipboard() {
@@ -39,25 +38,3 @@ function setFooterClipboard() {
   });
 }
 
-function setNavButtonListeners() {
-  const homeBtn = $('#home-btn');
-  const experienceBtn = $('#experience-btn');
-  const projectsBtn = $('#projects-btn');
-  let homeContainer = $('#home-container');
-  let experienceContainer = $('#experience-container');
-  let projectsContainer = $('#projects-container');
-
-
-  // Show or hide containers depending on clicked button
-  experienceBtn.on('click', function() {
-    console.log('Handle exp click');
-    experienceContainer.removeClass('hidden');
-    projectsContainer.addClass('hidden');
-  });
-
-  projectsBtn.on('click', function() {
-    console.log('Handle proj click');
-    experienceContainer.addClass('hidden');
-    projectsContainer.removeClass('hidden');
-  });
-}

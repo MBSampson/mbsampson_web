@@ -2,7 +2,22 @@ class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
 
   def home
+  end
+
+  def index
     @projects = Project.all
+    respond_to do |format|
+      format.html {}
+      format.js
+    end
+  end
+
+  def experience
+    # @experience = Experience.all
+    respond_to do |format|
+      format.html {}
+      format.js
+    end
   end
 
 
