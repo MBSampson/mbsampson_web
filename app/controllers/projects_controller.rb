@@ -1,8 +1,15 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :set_projects, only: [:index, :home]
 
   def home
-    @projects = Project.all
+  end
+
+  def index
+  end
+
+  def experience
+    # @experience = Experience.all
   end
 
 
@@ -50,6 +57,10 @@ class ProjectsController < ApplicationController
   private
     def set_project
       @project = Project.find(params[:id])
+    end
+
+    def set_projects
+      @project = Project.all
     end
 
     def project_params
